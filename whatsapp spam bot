@@ -1,0 +1,10 @@
+count = 0
+
+while count < 2:
+    import pyautogui, time
+
+    time.sleep(1)
+    s = open("scrpt", 'r')
+    for word in s:
+        pyautogui.typewrite(word)
+        pyautogui.press("enter")
